@@ -1,0 +1,99 @@
+[3J[H[2J<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 303 entries, 0 to 302
+Data columns (total 14 columns):
+column_a    303 non-null int64
+column_b    303 non-null bool
+column_c    303 non-null int64
+column_d    303 non-null int64
+column_e    303 non-null int64
+column_f    303 non-null bool
+column_g    303 non-null int64
+column_h    303 non-null int64
+column_i    303 non-null bool
+column_j    303 non-null float64
+column_k    303 non-null int64
+column_l    299 non-null float64
+column_m    301 non-null float64
+column_n    303 non-null int64
+dtypes: bool(3), float64(3), int64(8)
+memory usage: 27.0 KB
+None
+<class 'pandas.core.frame.DataFrame'>
+Index: 297 entries, 0 to 301
+Data columns (total 14 columns):
+age                297 non-null int64
+sex                297 non-null bool
+chest_pain         297 non-null int64
+trestbps           297 non-null int64
+cholesterol        297 non-null int64
+fasting_bsugar     297 non-null bool
+restecg            297 non-null int64
+thalach            297 non-null int64
+exercise_angina    297 non-null bool
+oldpeak            297 non-null float64
+slope              297 non-null int64
+colored_vessels    297 non-null float64
+thal               297 non-null float64
+target             297 non-null int64
+dtypes: bool(3), float64(3), int64(8)
+memory usage: 28.7+ KB
+None
+Accuracy for Decision Tree classifier is 0.7563025210084033
+Training time for Decision Tree classifier: 0.0008702278137207031 seconds
+Testing time for Decision Tree classifier: 0.00016379356384277344 seconds
+
+<bound method BaseEstimator.get_params of SVC(C=0.01, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)>
+Accuracy for SVM classifier is 0.8487394957983193
+Training time for SVM classifier: 0.0045642852783203125 seconds
+Testing time for SVM classifier: 0.0005850791931152344 seconds
+Accuracy for Boosting classifier is 0.8319327731092437
+Training time for Boosting classifier: 0.28626108169555664 seconds
+Testing time for Boosting classifier: 0.022991180419921875 seconds
+
+Accuracy for KNN classifier is 0.7310924369747899
+Training time for KNN classifier: 0.0008594989776611328 seconds
+Testing time for KNN SVM classifier: 0.0018453598022460938 seconds
+
+Accuracy for Neural Network is 0.773109243697479
+Training time for Neural Network: 0.19275832176208496 seconds
+Testing time for Neural Network: 0.001499176025390625 seconds
+
+********************************
+Accuracy for Tuned Decision Tree classifier is 0.6974789915966386
+Training time for Tuned Decision Tree classifier: 0.31696391105651855 seconds
+Testing time for Tuned Decision Tree classifier: 0.00016427040100097656 seconds
+Best parameters: {'max_depth': 1}
+
+Accuracy for Tuned SVM classifier is 0.8067226890756303
+Training time for Tuned SVM classifier: 0.220350980758667 seconds
+Testing time for Tuned SVM classifier: 0.000431060791015625 seconds
+
+Best parameters: {'C': 0.25}
+Accuracy for Tuned KNN classifier is 0.8487394957983193
+Training time for Tuned KNN classifier: 0.17103338241577148 seconds
+Testing time for Tuned KNN classifier: 0.0018470287322998047 seconds
+Best parameters: {'n_neighbors': 5}
+
+Accuracy for Tuned Weighted KNN classifier is 0.8487394957983193
+Training time for Tuned Weighed KNN classifier: 0.17437386512756348 seconds
+Testing time for Tuned Weighed KNN classifier: 0.0018665790557861328 seconds
+Best parameters: {'n_neighbors': 5}
+
+Accuracy for Tuned Boosting classifier is 0.8151260504201681
+Training time for Tuned Boosting classifier: 73.08486723899841 seconds
+Testing time for Tuned Boosting classifier: 0.007636070251464844 seconds
+Best parameters: {'n_estimators': 41}
+
+Accuracy for Tuned Neural Network is 0.7815126050420168
+Training time for Tuned NN: 350.4064612388611 seconds
+Testing time for Tuned NN: 0.0 seconds
+Best parameters: {'activation': 'tanh', 'alpha': 1e-05, 'learning_rate_init': 0.01}
+
+(297, 2)
+(297,)
+(14490,)
+(14490,)
+(14490,)

@@ -1,0 +1,55 @@
+[3J[H[2JX_train shape: (960, 4)
+X_test shape: (412, 4)
+y_train shape: (960,)
+y_test shape: (412,)
+<bound method BaseEstimator.get_params of SVC(C=0.01, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='linear',
+  max_iter=-1, probability=False, random_state=42, shrinking=True,
+  tol=0.001, verbose=False)>
+Accuracy for SVM classifier is 0.9805825242718447
+Training time for SVM classifier: 0.01184225082397461 seconds
+Testing time for SVM classifier: 0.00269317626953125 seconds
+Accuracy for Decision Tree classifier is 0.9296116504854369
+Training time for Decision Tree classifier: 0.0021445751190185547 seconds
+Testing time for Decision Tree classifier: 0.00023221969604492188 seconds
+
+Accuracy for Boosting classifier is 1.0
+Training time for Boosting classifier: 0.39100003242492676 seconds
+Testing time for Boosting classifier: 0.01709151268005371 seconds
+
+Accuracy for KNN classifier is 1.0
+Training time for KNN classifier: 0.0006124973297119141 seconds
+Testing time for KNN SVM classifier: 0.0014870166778564453 seconds
+
+Accuracy for Neural Network is 1.0
+Training time for Neural Network: 0.08292841911315918 seconds
+Testing time for Neural Network: 0.0005865097045898438 seconds
+
+********************************
+Accuracy for Tuned SVM classifier is 0.9878640776699029
+Training time for Tuned SVM classifier: 0.3259398937225342 seconds
+Testing time for Tuned SVM classifier: 0.00033545494079589844 seconds
+
+Best parameters: {'C': 2.75}
+Accuracy for Tuned Decision Tree classifier is 0.9805825242718447
+Training time for Tuned Decision Tree classifier: 0.2806885242462158 seconds
+Testing time for Tuned Decision Tree classifier: 0.0001366138458251953 seconds
+Best parameters: {'max_depth': 7}
+
+Accuracy for Tuned KNN classifier is 1.0
+Training time for Tuned KNN classifier: 0.1693406105041504 seconds
+Testing time for Tuned KNN classifier: 0.0012850761413574219 seconds
+Best parameters: {'n_neighbors': 1}
+
+Accuracy for Tuned Weighted KNN classifier is 1.0
+Training time for Tuned Weighed KNN classifier: 0.1824054718017578 seconds
+Testing time for Tuned Weighed KNN classifier: 0.0014362335205078125 seconds
+Best parameters: {'n_neighbors': 1}
+
+/home/y/anaconda3/lib/python3.7/site-packages/sklearn/ensemble/weight_boosting.py:29: DeprecationWarning: numpy.core.umath_tests is an internal NumPy module and should not be imported. It will be removed in a future NumPy release.
+  from numpy.core.umath_tests import inner1d
+Accuracy for Tuned Boosting classifier is 1.0
+Training time for Tuned Boosting classifier: 109.10366439819336 seconds
+Testing time for Tuned Boosting classifier: 0.030931949615478516 seconds
+Best parameters: {'n_estimators': 64}
+
